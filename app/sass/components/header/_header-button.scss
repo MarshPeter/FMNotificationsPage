@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../../abstracts";
+
+.header__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    color: abstracts.$darkGrayishBlue;
+}
+
+.header__button:hover {
+    color: abstracts.$blue;
+}

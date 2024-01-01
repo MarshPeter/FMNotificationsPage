@@ -1,0 +1,57 @@
+@use "../../abstracts";
+
+.notification__text {
+    color: abstracts.$darkGrayishBlue; 
+
+    &--user, &--small-emphasis, &--big-emphasis {
+        font-weight: map-get($map: abstracts.$fontWeights, $key:"bold");
+    }
+
+
+    &--user {
+        color: abstracts.$veryDarkBlue;
+    }
+
+    &--small-emphasis {
+        color: abstracts.$darkGrayishBlue;
+    }
+
+    &--big-emphasis {
+        color: abstracts.$blue;
+    }
+
+    &--time {
+        color: abstracts.$grayishBlue;
+        margin-top: 0.3em;
+    }
+
+    &--submessage {
+        border: 1px solid abstracts.$lightGrayishBlueTwo;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        margin-top: 0.8em;
+    }
+
+    &--user:hover, &--small-emphasis:hover, &--big-emphasis:hover, &--submessage:hover {
+        cursor: pointer;
+    }
+
+    &--user:hover, &--small-emphasis:hover {
+        color: abstracts.$blue;
+    }
+
+    &--submessage:hover {
+        background-color: abstracts.$lightGrayishBlueOne;
+    }
+}
+
+.unseen-text::after {
+    content: " ";
+    display: inline-block;
+    background-color: abstracts.$red;
+    height: 10px;
+    width: 10px;
+    border-radius: 15px;
+    margin-left: 0.4em;
+}
+

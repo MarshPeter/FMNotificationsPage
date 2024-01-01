@@ -1,0 +1,15 @@
+@use "sass:map";
+@use "../../abstracts";
+
+.notifications__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: map.get(abstracts.$breakpoints, "tablet")) {
+    .notifications__header {
+        padding: 1rem 0 2rem 0;
+    }
+}
+

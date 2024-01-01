@@ -1,0 +1,17 @@
+@use "../../abstracts";
+
+.header__title {
+    font-size: 1.25rem;   
+    font-weight: map-get($map: abstracts.$fontWeights, $key:"bold");
+
+    &--emphasised {
+        font-weight: map-get($map: abstracts.$fontWeights, $key:"bold");
+
+        margin-left: 0.5rem;
+        padding: 0.10rem 0.6rem;
+        background-color: abstracts.$blue;
+        color: abstracts.$white;
+        border-radius: 5px;
+    }
+}
+

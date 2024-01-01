@@ -1,0 +1,153 @@
+/* primary */
+/* secondary */
+* {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(210, 60%, 98%);
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 4rem 0;
+  }
+}
+.notifications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1024px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .notifications {
+    padding: 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.8em 0.5em rgba(0, 0, 0, 0.02);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .notifications {
+    border-radius: 1rem;
+    box-shadow: 0 0 0.8em 0.5em rgba(0, 0, 0, 0.02);
+  }
+}
+.notifications__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .notifications__header {
+    padding: 1rem 0 2rem 0;
+  }
+}
+.header__title {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.header__title--emphasised {
+  font-weight: 800;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.6rem;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+
+.header__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  color: hsl(219, 12%, 42%);
+}
+
+.header__button:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notifications__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.notification {
+  display: flex;
+  gap: 1rem;
+  background-color: hsl(210, 60%, 98%);
+  padding: 1rem;
+  border-radius: 0.8em;
+}
+.notification--unseen {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notification__text {
+  color: hsl(219, 12%, 42%);
+}
+.notification__text--user, .notification__text--small-emphasis, .notification__text--big-emphasis {
+  font-weight: 800;
+}
+.notification__text--user {
+  color: hsl(224, 21%, 14%);
+}
+.notification__text--small-emphasis {
+  color: hsl(219, 12%, 42%);
+}
+.notification__text--big-emphasis {
+  color: hsl(219, 85%, 26%);
+}
+.notification__text--time {
+  color: hsl(219, 14%, 63%);
+  margin-top: 0.3em;
+}
+.notification__text--submessage {
+  border: 1px solid hsl(205, 33%, 90%);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  margin-top: 0.8em;
+}
+.notification__text--user:hover, .notification__text--small-emphasis:hover, .notification__text--big-emphasis:hover, .notification__text--submessage:hover {
+  cursor: pointer;
+}
+.notification__text--user:hover, .notification__text--small-emphasis:hover {
+  color: hsl(219, 85%, 26%);
+}
+.notification__text--submessage:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.unseen-text::after {
+  content: " ";
+  display: inline-block;
+  background-color: hsl(1, 90%, 64%);
+  height: 10px;
+  width: 10px;
+  border-radius: 15px;
+  margin-left: 0.4em;
+}
+
+.notification__attached-image {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+@use "sass:map";
+@use '../abstracts';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: abstracts.$veryLightGrayishBlue;
+}
+
+@media only screen and (min-width: map.get(abstracts.$breakpoints, "desktop")) {
+    body {
+        padding: 4rem 0;
+    }
+}

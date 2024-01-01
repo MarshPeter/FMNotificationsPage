@@ -1,0 +1,21 @@
+@use "../../abstracts";
+
+.notifications__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.notification {
+    display: flex;
+    gap: 1rem;
+    background-color: abstracts.$veryLightGrayishBlue; 
+    padding: 1rem;
+    border-radius: 0.8em;
+
+    &--unseen {
+        background-color: abstracts.$lightGrayishBlueOne;
+    }
+}
+
+
